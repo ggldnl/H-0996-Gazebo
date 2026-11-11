@@ -6,7 +6,7 @@
 
 This repository contains a ROS2 launch file to load the robot on Gazebo and control it.
 
-For a complete overview of the project refer to the [main H-0996 repository](https://github.com/ggldnl/Hexapod.git).
+For a complete overview of the project refer to the [main H-0996 repository](https://github.com/ggldnl/H-0996.git).
 
 ## 🛠️ Setup
 
@@ -29,7 +29,7 @@ A ROS best practice is to put any packages in the workspace into the `src` direc
 
 ```bash
 cd ~/ros_ws/src  # use your actual ROS workspace
-git clone --recurse-submodules https://github.com/ggldnl/Hexapod-Gazebo.git
+git clone --recurse-submodules https://github.com/ggldnl/H-0996-Gazebo.git
 ```
 
 ### Build the package 
@@ -42,7 +42,7 @@ source install/setup.bash
 
 ## 🚀 Delpoy
 
-- Launch the [controller node](https://github.com/ggldnl/Hexapod-ROS-Python.git) on the hexapod. The board runs the whole control loop; the node provisions it at startup, stands it up, then streams your setpoints (`/hexapod/cmd_vel`, `/hexapod/cmd_pose`, ...) and republishes telemetry (`/hexapod/odom`, `/hexapod/joint_values`, ...). Gazebo mirrors the streamed joint values, so it shows exactly what the real robot is doing.
+- Launch the [controller node](https://github.com/ggldnl/H-0996-ROS-Python.git) on the hexapod. The board runs the whole control loop; the node provisions it at startup, stands it up, then streams your setpoints (`/hexapod/cmd_vel`, `/hexapod/cmd_pose`, ...) and republishes telemetry (`/hexapod/odom`, `/hexapod/joint_values`, ...). Gazebo mirrors the streamed joint values, so it shows exactly what the real robot is doing.
   ```bash
   ros2 run hexapod_controller hexapod_controller
   ```
@@ -135,4 +135,4 @@ ros2 launch hexapod_gazebo joy_teleop.launch.py joy_device_id:=0
 
 ## 🤝 Contribution
 
-Feel free to contribute by opening issues or submitting pull requests. For further information, check out the [main H-0996 repository](https://github.com/ggldnl/Hexapod). Give a ⭐️ to this project if you liked the content.
+Feel free to contribute by opening issues or submitting pull requests. For further information, check out the [main H-0996 repository](https://github.com/ggldnl/H-0996). Give a ⭐️ to this project if you liked the content.

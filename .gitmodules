@@ -1,4 +1,4 @@
 [submodule "Hexapod-Hardware"]
 	path = Hexapod-Hardware
-	url = https://github.com/ggldnl/Hexapod-Hardware
+	url = https://github.com/ggldnl/H-0996-Hardware
 	branch = new-tibia
